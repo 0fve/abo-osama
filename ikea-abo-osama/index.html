@@ -19,29 +19,31 @@
 
 <body>
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg pt-3 pb-3 navbar-dark fixed-top" id="navbar_top"
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
     style="background-color: transparent;">
     <div class="container">
-      <div class="row-fluid">
-      <a class="navbar-brand m-4" href=""><span><i class="fab fa-instagram"></i></span></a>
-      <a href="" ><img class='maroof' src="https://assets.salla.cloud/themes/default/assets/images/maroof.png?v=v1.4.272" alt="" style="width: 22px;"></a>
-    </div>
+      <div class="row-fluid align-items-center">
+        <a class="navbar-brand mt-3 mb-2 " href=""><span><i class="fab fa-instagram"></i></span></a>
+        <a class="m-4" href=""><img 
+            src="https://assets.salla.cloud/themes/default/assets/images/maroof.png?v=v1.4.272" alt=""
+            style="width: 20px;"></a>
+      </div>
       <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav-align">
-          <li class="nav-item active m-4">
-            <a class="nav-link navbar-text" style="font-size: x-large; font-weight: 700; color: #ffffff;"
+          <li class="nav-item active mt-3 mb-2">
+            <a class="nav-link navbar-text " style="font-size: x-large; font-weight: 700; color: #ffffff;"
               href="#contact">التواصل</a>
           </li>
-          <li class="nav-item active m-4">
-            <a href='#whyUS' class="nav-link navbar-text" style="font-size: x-large; font-weight: 700; color: #ffffff;"
+          <li class="nav-item active mt-3 mb-2">
+            <a href='#whyUS' class="nav-link navbar-text " style="font-size: x-large; font-weight: 700; color: #ffffff;"
               href="#">مميزات</a>
           </li>
-          <li class="nav-item active m-4">
-            <a href='#main' class="nav-link navbar-text" style="font-size: x-large; font-weight: 700; color: #ffffff;"
+          <li class="nav-item active mt-3 mb-2">
+            <a href='#main' class="nav-link navbar-text " style="font-size: x-large; font-weight: 700; color: #ffffff;"
               href="#">الرئيسية</a>
           </li>
         </ul>
@@ -57,7 +59,6 @@
     background-image: url('a-large-kitchen-with-fronts-in-stainless-steel-worktops-in-o-0a51001ba2fec73d4ab0b8eccb3a7e50.webp');
     height: 100vh;">
       <div class="container text-warning">
-
         <center>
           <p class="display-1 display">توصيل و تركيب اثاث و مطابخ ايكيا</p>
         </center>
@@ -74,10 +75,10 @@
           <center>
             <p class="mb-3 display-1 display">خبرة اكثر من 15 سنة</p>
 
-            <p class="WhyUS h3" style="text-shadow: 3px 3px black; color: white;">
+            <strong><p class="WhyUS h3" style=" text-shadow: 4.5px 3px black; color: rgb(255, 255, 255);">
               الأفضل في تركيب المطابخ و جميع الأثاث المقدمة من ايكيا بفضل خبرتنا التي تزيد عن 15 سنه في المجال
+            </strong>
           </center>
-          </p>
         </div>
       </div>
     </div>
@@ -85,8 +86,8 @@
   <!-- End section -->
 
   <!-- New section -->
-  <div class="" id="contact" style="background-color: darkblue; height: 50vh;">
-    <div class="container text-warning">
+  <div class="" id="contact" style="background-color: #212429; height: 50vh;">
+    <div class="container text-warning pt-5">
       <center class="pt-5">
         <p class="mt-5 display-1 display d-flex justify-content-center">جميع اعمالنا</p>
         <div class="row  d-flex justify-content-center">
@@ -99,7 +100,7 @@
     </div>
   </div>
 
-  <div class="" style="background-color: darkblue; height: 50vh;">
+  <div class="" style="background-color: #212429; height: 50vh;">
     <div class="container text-warning">
       <center class="pt-5">
         <p class="mt-5 display-1 display">للتواصل</p>
@@ -119,12 +120,16 @@
 
 </body>
 <style>
-  @media (max-width: 992px)
-  {
-      .nav-link
-      {
-        margin-left: 13rem;
-      }
+  
+  .nav>li {
+    position: relative;
+    display: block;
+  }
+
+  @media (max-width: 992px) {
+    .nav-link {
+      margin-left: 13rem;
+    }
   }
 
   .inputs::placeholder {
